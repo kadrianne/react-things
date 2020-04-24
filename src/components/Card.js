@@ -1,14 +1,10 @@
 import React from 'react'
 
 export default function Card(props) {
-    const {character, addToFavorites, removeFromFavorites} = props
+    const {character,action} = props
 
     function handleClick(){
-        if (addToFavorites){
-            addToFavorites(character)
-        } else {
-            removeFromFavorites(character)
-        }
+        action(character)
     }
 
     return (

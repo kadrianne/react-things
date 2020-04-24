@@ -4,7 +4,7 @@ import CardContainer from './CardContainer'
 export default function MainContainer(props){
     return(
         <div className='main-container'>
-            <CardContainer characters={props.characters} addToFavorites={props.addToFavorites} />
+            <CardContainer characters={props.characters} action={props.action} />
         </div>
     )
 }

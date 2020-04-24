@@ -4,7 +4,7 @@ import Card from './Card'
 export default function CardContainer(props) {
 
     const characters = props.characters.map(character => {
-        return <Card character={character} addToFavorites={props.addToFavorites} />
+        return <Card character={character} action={props.action} />
     })
     return (
         <div className='card-container'>

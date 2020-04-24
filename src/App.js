@@ -34,9 +34,9 @@ export default class App extends Component {
   render(){
     return(
       <div className='App'>
-        <Favorites favorites={this.state.favorites} removeFromFavorites={this.removeFromFavorites}/>
+        <Favorites favorites={this.state.favorites} action={this.removeFromFavorites}/>
         <h1>Rick and Morty Characters</h1>
-        <MainContainer characters={this.state.characters} addToFavorites={this.addToFavorites}/>
+        <MainContainer characters={this.state.characters} action={this.addToFavorites}/>
       </div>
     )
   }
