@@ -8,6 +8,11 @@
 
 }
 
+.favorites {
+  background-color: orange;
+  display: flex;
+}
+
 .card-container {
   width: 80%;
   display: flex;
